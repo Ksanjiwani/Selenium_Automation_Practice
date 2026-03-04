@@ -2,11 +2,12 @@ package Selenium_Practice;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Login_Opeartion {
 	
-	public static void main(String args[])
+	public static void main(String args[]) throws InterruptedException
 	{
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -20,6 +21,11 @@ public class Login_Opeartion {
 		driver.findElement(By.id("password")).sendKeys(Password);
 		
 		driver.findElement(By.id("signInBtn")).click();
+		
+		
+		
+		
+		Thread.sleep(20000);
 	}
 
 }
