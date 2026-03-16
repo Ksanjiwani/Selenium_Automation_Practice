@@ -16,6 +16,9 @@ public class Google_opn {
 		String Title = driver.getTitle();
 		System.out.println(Title);
 		
+		String CurrentUrl = driver.getCurrentUrl();
+		System.out.println(CurrentUrl);
+		
 		
 		
 	}
