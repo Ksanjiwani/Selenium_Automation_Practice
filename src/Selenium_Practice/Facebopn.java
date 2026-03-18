@@ -13,7 +13,15 @@ public class Facebopn {
 		
 		
 		String Title = driver.getTitle();
-		System.out.println(Title);
+		System.out.println("Current Title is: "+Title);
+		System.out.println("Current Title Length is: "+Title.length());
+		if(Title.equals("Facebook"))
+		{
+			System.out.println("Title validation pass");
+		}
+		
+		String URL = driver.getCurrentUrl();
+		System.out.println("Current URL is: " + URL);
 	}
 
 }
