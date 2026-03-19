@@ -14,6 +14,8 @@ public class SpiceJet_App_Opeartion {
 		System.out.println("Current URL is: " + driver.getCurrentUrl());
 		System.out.println("Current Title is: " + driver.getTitle());
 		
+		
+		
 		driver.quit();
 		
 	}
